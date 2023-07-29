@@ -13,6 +13,9 @@
 		662AC6732A7383E2009576B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662AC6712A7383E2009576B4 /* Main.storyboard */; };
 		662AC6752A7383E4009576B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662AC6742A7383E4009576B4 /* Assets.xcassets */; };
 		662AC6782A7383E4009576B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 662AC6762A7383E4009576B4 /* LaunchScreen.storyboard */; };
+		66936A652A74346A005F292A /* QuestaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66936A642A74346A005F292A /* QuestaoViewController.swift */; };
+		66936A672A743CD5005F292A /* Questoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66936A662A743CD5005F292A /* Questoes.swift */; };
+		66936A692A744576005F292A /* DesempenhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66936A682A744576005F292A /* DesempenhoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		662AC6742A7383E4009576B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		662AC6772A7383E4009576B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		662AC6792A7383E4009576B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66936A642A74346A005F292A /* QuestaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoViewController.swift; sourceTree = "<group>"; };
+		66936A662A743CD5005F292A /* Questoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questoes.swift; sourceTree = "<group>"; };
+		66936A682A744576005F292A /* DesempenhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesempenhoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		662AC66A2A7383E2009576B4 /* iQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				66936A6B2A744E4D005F292A /* Model */,
+				66936A6A2A744E32005F292A /* ViewController */,
 				662AC66B2A7383E2009576B4 /* AppDelegate.swift */,
 				662AC66D2A7383E2009576B4 /* SceneDelegate.swift */,
-				662AC66F2A7383E2009576B4 /* ViewController.swift */,
 				662AC6712A7383E2009576B4 /* Main.storyboard */,
 				662AC6742A7383E4009576B4 /* Assets.xcassets */,
 				662AC6762A7383E4009576B4 /* LaunchScreen.storyboard */,
 				662AC6792A7383E4009576B4 /* Info.plist */,
 			);
 			path = iQuiz;
+			sourceTree = "<group>";
+		};
+		66936A6A2A744E32005F292A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				662AC66F2A7383E2009576B4 /* ViewController.swift */,
+				66936A642A74346A005F292A /* QuestaoViewController.swift */,
+				66936A682A744576005F292A /* DesempenhoViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		66936A6B2A744E4D005F292A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66936A662A743CD5005F292A /* Questoes.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66936A672A743CD5005F292A /* Questoes.swift in Sources */,
 				662AC6702A7383E2009576B4 /* ViewController.swift in Sources */,
 				662AC66C2A7383E2009576B4 /* AppDelegate.swift in Sources */,
 				662AC66E2A7383E2009576B4 /* SceneDelegate.swift in Sources */,
+				66936A692A744576005F292A /* DesempenhoViewController.swift in Sources */,
+				66936A652A74346A005F292A /* QuestaoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
